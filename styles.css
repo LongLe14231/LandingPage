@@ -10,15 +10,18 @@ body {
     margin: 0;
 }
 
-.navbar {
+.navbar,
+.container {
     display: flex;
-    padding: 10px;
     max-width: 1140px;
     width: 100%;
     margin: 0 auto;
-    justify-content: space-between;
 }
 
+.navbar {
+    justify-content: space-between;
+    padding: 10px;
+}
 
 .brand,
 .nav-link {
@@ -46,4 +49,85 @@ body {
     text-decoration: none;
     padding-left: 20px;
     font-size: 20px;
+}
+
+
+.dropdownLink {
+    display: none;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.headshot-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 6rem 0;
+    height: auto;
+    width: auto;
+}
+
+.headshot {
+    border-radius: 50%;
+}
+
+.services {
+    background-color: #F1F3FA;
+    padding: 4rem 1rem;
+}
+
+.media-object {
+    display: flex;
+}
+
+
+.icon-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+}
+
+.icon {
+    width: 180px;
+}
+
+.blurp-wrapper{
+    flex: 1;
+    color: #646B90;
+    font-size: 18px;
+}
+
+
+@media (max-width: 768px) {
+
+    ul.topnav li a.nav-link {
+        display: none;
+    }
+
+    ul.topnav li.dropdownLink {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+
+    }
+
+    ul.topnav.responsive {
+        flex-direction: column;
+    }
+
+
+    /*when responsive is added, give it a block display*/
+    ul.topnav.responsive li a.nav-link {
+        display: block;
+    }
+
 }

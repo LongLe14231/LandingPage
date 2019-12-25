@@ -10,16 +10,61 @@
 
 <body>
     <nav class="navbar">
-        <div class="brand"><span class="sensei">Sensei</span></div>
+        <div class="brand"><span class="sensei">Software Developer</span></div>
 
-        <ul class="topnav">
+        <ul class="topnav" id="navbar-toggle">
             <li><a class="nav-link" href="#">Home</a></li>
             <li><a class="nav-link" href="#">Products</a></li>
             <li><a class="nav-link" href="#">About Us</a></li>
             <li><a class="nav-link" href="#">Contact Us</a></li>
+            <li class="dropdownLink"><a onclick="toggleDropdown()" href="">&#9776;</a></li>
         </ul>
 
     </nav>
+
+
+
+
+
+
+
+    <header>
+        <div class="headshot-wrapper">
+            <img class="headshot" src="assets/chris.jpg" alt="profile img">
+            <h1>Jason Le</h1>
+        </div>
+    </header>
+
+
+    <section class="services">
+        <div class="container">
+
+            <div class="media-object">
+                <div class="icon-wrapper">
+                    <img class="icon" src="assets/htmlicons.jpg" alt="graph lines">
+                </div>
+
+
+                <div class="blurb-wrapper">
+                    <h3 class="blurb-header">Scalable Code</h3>
+                    <div class="blurb-info">
+                        Lorem ipsum dolor sit amet, vim ne vivendo atomorum repudiandae, veri eloquentiam sea at. At vix porro bonorum, ea qui esse bonorum. In sint aeque dolor his, eos illum feugiat sententiae no. At maluisset accusamus pri, no habeo honestatis vis, eam cetero electram ut.
+
+                        Ut vocibus necessitatibus pro, ea rebum facer cum. Liber praesent ei vis, vis doming recteque an. Veri appellantur dissentiunt in usu, an populo omnesque philosophia eos. Cu modo dignissim vis. Falli propriae ut pro.
+
+                        Ne fabulas albucius democritum sea, vel id graece sadipscing. Ea ius elitr invenire. At fabellas recusabo theophrastus pri. Mucius labores admodum his at. An congue libris quo, agam doctus scriptorem cum id.
+
+
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+    <!--load jQuery first and then our file can just call functions in it-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="main.js"></script>
 </body>
 
 </html>
